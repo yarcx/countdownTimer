@@ -25,11 +25,40 @@
 
 body {
   margin: 0;
+}
+
+.container {
+  position: relative;
   display: flex;
+  flex-direction: column;
   place-items: center;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+}
+
+nav {
+  height: auto;
+  background: white;
+  width: 100vw;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  height: 3rem;
+  width: auto;
+}
+
+.countDownBox {
+  height: 100%;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -49,6 +78,13 @@ h1 {
   h1 {
     font-size: 4.2em;
     line-height: 1.1;
+  }
+  .logo {
+    height: 5rem;
+    width: auto;
+  }
+  nav {
+    padding: 0.8rem 2rem;
   }
 }
 @media screen and (min-width: 1200px) {

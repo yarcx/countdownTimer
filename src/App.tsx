@@ -1,5 +1,7 @@
 import Countdown, { CountdownRenderProps } from "react-countdown";
 
+const nnpcLogo = "./nnpc-logo.png";
+
 const Completed = () => (
   <>
     <h1>Congrats!!! Countdown Completed</h1>
@@ -21,7 +23,16 @@ const renderer = (props: CountdownRenderProps) => {
 };
 
 function App() {
-  return <Countdown date={new Date(2024, 0, 1)} renderer={renderer} />;
+  return (
+    <div className='container'>
+      <nav>
+        <img src={nnpcLogo} alt='Nnpc Logo' className='logo' />
+      </nav>
+      <div className='countDownBox'>
+        <Countdown date={new Date(2024, 0, 1)} renderer={renderer} />
+      </div>
+    </div>
+  );
 }
 
 export default App;
