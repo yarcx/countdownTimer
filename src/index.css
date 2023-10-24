@@ -39,7 +39,7 @@ body {
 }
 
 nav {
-  height: auto;
+  height: 90px;
   background: white;
   width: 100vw;
   padding: 0.8rem 1rem;
@@ -54,12 +54,12 @@ nav {
 }
 
 .countDownBox {
-  height: 100%;
   flex-grow: 1;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: calc(100vh - 90px);
 }
 
 h1 {
