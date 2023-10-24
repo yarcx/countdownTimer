@@ -5,7 +5,7 @@ const nnpcLogo = "./nnpc-logo.png";
 const Completed = () => (
   <>
     <h1>Congrats!!! Countdown Completed</h1>
-    <h2>0 day : 0 hr : 0 min : 0 sec</h2>
+    <h2>0 Day : 0 Hr : 0 Min : 0 Sec</h2>
   </>
 );
 
@@ -16,7 +16,7 @@ const renderer = (props: CountdownRenderProps) => {
   } else {
     return (
       <h1>
-        {days} days : {hours} hrs : {minutes} mins : {seconds} secs
+        {days} Days : {hours} Hrs : {minutes} Mins : {seconds} Secs
       </h1>
     );
   }
