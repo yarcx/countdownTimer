@@ -23,8 +23,8 @@ const renderer = (props: CountdownRenderProps) => {
 function App() {
   return (
     <>
-      {/* <Countdown date={new Date("2024-1-1")} renderer={renderer} /> */}
-      <Countdown date={Date.now() + 5000} renderer={renderer} />
+      <Countdown date={new Date("2024-1-1")} renderer={renderer} />
+      {/* <Countdown date={Date.now() + 5000} renderer={renderer} /> */}
     </>
   );
 }
